@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sum</title>
+</head>
+
+<body>
+
+    <h1>ADDITION CALCULATOR</h1>
+
+    <label for="num1">Enter the first number:</label>
+    <input type="number" id="num1" placeholder="Enter the first number">
+    <br><br>
+
+    <label for="num2">Enter the second number:</label>
+    <input type="number" id="num2" placeholder="Enter the second number">
+    <br><br>
+
+    <button class="btn" onclick="calculateSum()">Calculate Sum</button>
+
+    <p id="result"></p>
+
+    <script>
+
+        function calculateSum() {
+            
+            let num1 = parseFloat(document.getElementById('num1').value);
+            let num2 = parseFloat(document.getElementById('num2').value);
+           
+            if (isNaN(num1) || isNaN(num2)) {
+
+                document.getElementById('result').innerText = "Please enter valid numbers.";
+            } else {
+                
+                let sum = num1 + num2;
+                
+                document.getElementById('result').innerText = 'The sum of ${num1} and ${num2} is: ${sum}';
+            }
+        }
+
+    </script>
+    
+</body>
+
+</html>

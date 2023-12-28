@@ -1,0 +1,41 @@
+body{
+    background-color: thistle;
+    font-family: sans-serif;
+    font-size: 35px;
+    text-align: center;
+}
+
+h1{
+    font-size: 60px;
+    color: chocolate;
+    text-decoration: underline;
+}
+
+#num1{
+    font-size: 35px;
+    width: 410px;
+    color: royalblue;
+}
+
+#num2{
+    font-size: 35px;
+    width: 410px;
+    color: royalblue;
+}
+
+.btn{
+    font-size: 30px;
+    border-radius: 7px;
+    transition: 0.5s;
+    background-color: rgb(95, 74, 116);
+    color: white;
+}
+
+.btn:hover{
+    background-color: palevioletred;
+    border-radius: 20px;
+    color: black;
+}
+#result{
+    color: green;
+}
